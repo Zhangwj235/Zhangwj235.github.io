@@ -1,7 +1,7 @@
 ---
-title: 'Stata graph edit'
-permalink: /posts/2025/04/blog-post-1/
-date: 2025-04-11
+title: 'Time series note'
+permalink: /posts/2025/06/blog-post-1/
+date: 2025-06-07
 ---
 
 # 时间序列分析自学笔记
