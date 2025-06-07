@@ -1,3 +1,9 @@
+---
+title: 'Stata graph edit'
+permalink: /posts/2025/04/blog-post-1/
+date: 2025-04-11
+---
+
 # 时间序列分析自学笔记
 - 【Author】：Jack Zhang, Sun Yat-sen University 
 - 【Textbook】：Applied Econometric Time Series (4e), by Walter Enders 
@@ -16,7 +22,7 @@
 > 7. 阐述如何求确定的差分方程的特解。
 > 8. 阐述如何用待定系数法求随机差分方程的特解。
 > 9. 阐述如何用滞后因子求随机差分方程的特解。
->
+
 ## 1.1 时间序列模型
 
 当我们拿到一个时间序列模型，我们可能不假思索地就能说出一些直观的信息。比如，GDP 逐年增长的趋势、增速放缓的趋势。这就是直观的描述性分析。
