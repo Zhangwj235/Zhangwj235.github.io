@@ -590,16 +590,16 @@ $$
 A(1) = 1 - a_1 - a_2 - \cdots - a_p \notag
 $$
 - **用滞后算子解线性差分方程**：
-	再次考虑一阶方程 $y_{t}=a_{0}+a_{1}y_{t-1}+\varepsilon _{t}$，式中，$\mid a_{1}\mid <1$。根据 L 的定义，构造
+	再次考虑一阶方程 $y_t=a_0+a_1 y_{t-1}+\varepsilon_t$，式中，$a_1 <1$。根据 L 的定义，构造
 $$
-y_{t}= a_{0}+a_{1}Ly_{t}+\varepsilon_{t} \notag
+y_t= a_0+ a_1 L y_t+\varepsilon_t \notag
 $$
 解 $y_{t}$，我们得到：
 $$
-y_{t}=\frac{a_{0}+\varepsilon _{t}}{1-a_{1}L} \notag
+y_t=\frac{a_0+\varepsilon_{t}}{1-a_{1}L} \notag
 $$
-根据性质(1)，可知 $L{a}_{0}={a}_{0}$，因而 $\dfrac{{a}_{0}}{1-{a}_{1}L}={a}_{0}+{a}_{1}{a}_{0}+{a}_{1}^{2}{a}_{0}+\cdots =\dfrac{{a}_{0}}{1-{a}_{1}}$。
-根据性质(5)，可知 $\dfrac{\varepsilon _{t}}{1-a_{1}L}=\varepsilon _{t}+a_{1}\varepsilon _{t-1}+a_{1}^{2}\varepsilon _{t-2}+\cdots$，
+根据性质(1)，可知 $L a_0=a_0$，因而 $\dfrac{a_0}{1-a_1 L}=a_0+a_1 a_0+a_1^2 a_0+\cdots =\dfrac{a_0}{1-a_1}$。
+根据性质(5)，可知 $\dfrac{\varepsilon_t}}{1-a_{1}L}=\varepsilon_{t}+a_{1}\varepsilon_{t-1}+a_{1}^{2}\varepsilon_{t-2}+\cdots$，
 合并解的两个部分，便得到迭代法得到的特解。
 
 - 【**一般化**】滞后算子可以把方程表示为： 
@@ -1050,7 +1050,7 @@ $$
 $$
 所以，$y_{t}$的特解为  
 $$
- y_{t}=\frac{a_{0}+\sum_{i=0}^{q} \beta_{i} \varepsilon _{t-i}}{1-\sum_{i=1}^{p} a_{i} L^{i}}
+ y_{t}=\frac{a_{0}+\sum_{i=0}^{q} \beta_{i} \varepsilon_{t-i}}{1-\sum_{i=1}^{p} a_{i} L^{i}}
 $$
 幸运的是，我们不必使用待定系数法展开来求得序列 $\{\varepsilon_{t}\}$ 中每个元素的具体系数。但是我们必须认识到：这一展开式会生成MA($\infty$)过程。
 
