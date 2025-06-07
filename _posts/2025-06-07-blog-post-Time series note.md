@@ -592,7 +592,7 @@ $$
 - **用滞后算子解线性差分方程**：
 	再次考虑一阶方程 $y_{t}=a_{0}+a_{1}y_{t-1}+\varepsilon _{t}$，式中，$\mid a_{1}\mid <1$。根据 L 的定义，构造
 $$
-y_{t}= a_{0}+a_{1}Ly_{t}+\varepsilon _{t} \notag
+y_{t}= a_{0}+a_{1}Ly_{t}+\varepsilon_{t} \notag
 $$
 解 $y_{t}$，我们得到：
 $$
