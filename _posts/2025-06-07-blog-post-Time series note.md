@@ -1,7 +1,7 @@
 ---
 title: 'Time series note'
-permalink: /posts/2025/06/blog-post-2/
-date: 2025-06-07
+permalink: /posts/2025/06/blog-post-1/
+date: 2025-06-06
 ---
 
 时间序列分析自学笔记
