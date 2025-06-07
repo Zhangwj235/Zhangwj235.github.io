@@ -5,6 +5,8 @@ date: 2025-06-07
 ---
 
 时间序列分析自学笔记
+
+# 时间序列分析自学笔记
 - 【Author】：Jack Zhang, Sun Yat-sen University 
 - 【Textbook】：Applied Econometric Time Series (4e), by Walter Enders 
 - 【Original Slides】：https: //www.time-series.net/powerpoint_slides
