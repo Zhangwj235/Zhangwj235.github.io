@@ -25,7 +25,7 @@ redirect_from:
 =====
 电子邮箱 E-mail：zhangwj235@mail2.sysu.edu.cn
 
-Github [Github](https://github.com/Zhangwj235) 
+Github： [Zhangwj235](https://github.com/Zhangwj235) 
 
 通讯地址：中国广东省珠海市唐家湾中山大学珠海校区。（邮政编码：519082）
 
@@ -48,6 +48,6 @@ Contact Information
 =====
 E-mail: zhangwj235@mail2.sysu.edu.cn 
 
-[Github](https://github.com/Zhangwj235) 
+Github: [Zhangwj235](https://github.com/Zhangwj235) 
 
 Correspondence Address: Sun Yat-sen University Zhuhai Campus, Tangjiawan, Zhuhai City, Guangdong Province, China. (Postal code: 519082)
