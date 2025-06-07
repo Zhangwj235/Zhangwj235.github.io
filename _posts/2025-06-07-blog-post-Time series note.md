@@ -1,6 +1,6 @@
 ---
 title: 'Time series note'
-permalink: /posts/2025/06/blog-post-1/
+permalink: /posts/2025/06/blog-post-2/
 date: 2025-06-07
 ---
 
