@@ -1,0 +1,723 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../../img/fluid.png">
+  <link rel="icon" href="../../../../img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Jack Zhang">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="幸运总比有钱好？北京和上海汽车牌照分配的福利分析Ref： Li, S. (2018). Better Lucky Than Rich? Welfare Analysis of Automobile Licence Allocations in Beijing and Shanghai. The Review of Economic Studies, 85(4), 2389–2428.  Lin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Better Lucky Than Rich? Welfare Analysis of Automobile Licence Allocations in Beijing and Shanghai">
+<meta property="og:url" content="https://zhangwj235.github.io/2025/09/13/Better%20Lucky%20Than%20Rich/index.html">
+<meta property="og:site_name" content="Jack Zhang&#39;s Personal Website">
+<meta property="og:description" content="幸运总比有钱好？北京和上海汽车牌照分配的福利分析Ref： Li, S. (2018). Better Lucky Than Rich? Welfare Analysis of Automobile Licence Allocations in Beijing and Shanghai. The Review of Economic Studies, 85(4), 2389–2428.  Lin">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://files.mdnice.com/user/77043/a013902b-ba1e-4372-a9a9-d5c4ff239ddd.png">
+<meta property="og:image" content="https://files.mdnice.com/user/77043/593ef8c6-70d5-478c-9758-fdd5a3e3419a.png">
+<meta property="article:published_time" content="2025-09-12T18:32:58.727Z">
+<meta property="article:modified_time" content="2025-09-13T10:27:39.266Z">
+<meta property="article:author" content="Jack Zhang">
+<meta property="article:tag" content="Paper">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://files.mdnice.com/user/77043/a013902b-ba1e-4372-a9a9-d5c4ff239ddd.png">
+  
+  
+  
+  <title>Better Lucky Than Rich? Welfare Analysis of Automobile Licence Allocations in Beijing and Shanghai - Jack Zhang&#39;s Personal Website</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="../../../../css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="../../../../css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="../../../../css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"zhangwj235.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"3TFsZbI0jqQpxYcUS0JdmgZ8-gzGzoHsz","app_key":"fUDXRfmqg8dNdLUuv5DZT7YD","server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="../../../../js/utils.js" ></script>
+  <script  src="../../../../js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="../../../../index.html">
+      <strong>Jack Zhang</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../index.html" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About me</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../cv/" target="_self">
+                <i class="iconfont icon-codeforces"></i>
+                <span>CV</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archive</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('../../../../img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Better Lucky Than Rich? Welfare Analysis of Automobile Licence Allocations in Beijing and Shanghai"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-09-13 02:32" pubdate>
+          September 13, 2025 am
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.4k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          29 mins
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> views
+        </span>
+        
+      
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Better Lucky Than Rich? Welfare Analysis of Automobile Licence Allocations in Beijing and Shanghai</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <meta name="referrer" content="no-referrer"/>
+
+<h1 id="幸运总比有钱好？北京和上海汽车牌照分配的福利分析"><a href="#幸运总比有钱好？北京和上海汽车牌照分配的福利分析" class="headerlink" title="幸运总比有钱好？北京和上海汽车牌照分配的福利分析"></a>幸运总比有钱好？北京和上海汽车牌照分配的福利分析</h1><p><strong>Ref：</strong> Li, S. (2018). Better Lucky Than Rich? Welfare Analysis of Automobile Licence Allocations in Beijing and Shanghai. The Review of Economic Studies, 85(4), 2389–2428. </p>
+<p><strong>Link：</strong>  <strong><a target="_blank" rel="noopener" href="https://doi.org/10.1093/restud/rdx067">https://doi.org/10.1093/restud/rdx067</a></strong></p>
+<p><img src="https://files.mdnice.com/user/77043/a013902b-ba1e-4372-a9a9-d5c4ff239ddd.png" srcset="/img/loading.gif" lazyload alt=""></p>
+<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a><strong>摘要</strong></h1><p>经济学家往往倾向于基于市场机制而非基于非市场机制，以经济效率和创收为理由配置稀缺的公共资源。当相关资源的使用产生类型依赖的负外部性时，福利比较可能变得模糊不清。中国主要城市正在实施这两种分配机制，通过发放有限的车辆牌照应对日益恶化的交通拥堵和空气污染。不同的是，北京使用了不可转让的抽签Lottery，但上海使用的是拍卖系统。本文通过同时考虑配置效率和配置后的汽车外部性，实证量化了这两种机制的福利后果。分析显示，不同的分配机制导致社会福利的巨大差异。虽然北京的抽签系统在降低汽车外部性方面比拍卖有很大优势，但这种优势被配置不当带来的显著配置成本所抵消。仅在2012年，北京的抽签制度就造成了300亿元（近50亿美元）的社会福利损失。统一价格拍卖将为北京市政府带来近200亿元，超过其对当地公交系统的全部补贴。</p>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>基于市场的机制（即拍卖）经常被倡导以经济效率和创收为理由配置稀缺的公共资源，而不是基于非市场的机制（即抽签）。两者在实践中都得到了广泛应用，往往针对不同类型的资源。例如，拍卖通常用于出售矿权、木材和无线电频谱，而抽签则用于发放狩猎许可证、特许学校招生和陪审团义务。基于市场的机制可能通过使用价格信号来将稀缺资源分配给支付意愿（WTP）最高者以实现效率，而不可转让的抽签可能会导致分配不当和福利损失。然而，当资源的使用产生了WTP中不断增加的负外部性时，两种机制之间的福利比较可能变得模糊不清。在这种情况下，衡量社会福利的基础——社会福利（外部性的消费者福利净额）与市场化机制下资源配置的基础——WTP存在偏离，甚至可能随着WTP而减少。</p>
+<p><strong>【北京】</strong> 为缓解交通拥堵及改善空气质量，北京市政府于2011年引入车辆牌照配额制度，以限制车辆拥有量的增长。2011-2013年期间，每月通过不可转让的抽签发放约2万个新牌照，2013年后每月配额减少至约1.2万个。抽中的难度越来越大：赔率从2011年1月的1:10降至2013年底的1:100，并进一步降至2016年8月的1/700以下。</p>
+<p><strong>【上海】</strong> 上海建立了车辆牌照配额制度，但其牌照分配是通过拍卖系统，而不是抽签。事实上，自1994年以来就已经有了一个拍卖系统，但减少车辆拥有量的目标直到最近才出现。2008年，上海市政府采取多单位、歧视性、动态拍卖（multi-unit, discriminatory and dynamic auction）的形式，每月在网上发放约1万张牌照。2012年，拍卖系统向上海市政府产生超过67亿元（超过10亿美元）的收入。2013年3月，一张牌照的平均竞价达到9.2万元以上，高于许多入门级车型的价格。</p>
+<h1 id="研究问题与研究目的"><a href="#研究问题与研究目的" class="headerlink" title="研究问题与研究目的"></a>研究问题与研究目的</h1><p>本研究的主要目的是实证量化两种分配机制在分配车辆牌照时的福利后果，同时考虑分配效率和与车辆使用相关的外部性。</p>
+<p>这是一个重要的问题，至少有两个原因。</p>
+<ul>
+<li>首先，交通拥堵和空气污染给社会带来了巨大的成本（Parry等，2007）。Creutzig和He（2008）估计，北京市汽车使用的外部成本占其GDP的比重超过7.5%。在中央政府的背书下，中国许多大城市正在采用牌照配额制，并采用不同的分配机制。然而，<strong>这些政策的影响和福利后果不得而知。</strong></li>
+<li>其次，两种机制在福利比较上存在理论上的先验模糊性，因为牌照的使用（登记并最终驾驶车辆）与拥堵、污染等负外部性相关。这些外部性很可能会在消费者的WTP中增加，因为WTP高的消费者往往收入高。与此同时，中美两国的家庭出行调查数据显示，高收入家庭平均购买燃油效率较低的汽车，驾驶率高于低收入家庭。<strong>抽签或拍卖制度是否会带来更高的社会福利，关键取决于WTP中消费者异质性的水平及其与汽车外部性的关系。</strong> 因此，效率比较和福利影响的大小归根结底是实证问题。</li>
+</ul>
+<p><img src="https://files.mdnice.com/user/77043/593ef8c6-70d5-478c-9758-fdd5a3e3419a.png" srcset="/img/loading.gif" lazyload alt="表1显示了2010年北京家庭出行调查中七个收入群体的平均发动机尺寸和年车辆行驶里程（VMT）。对于车主，该调查包含有关家庭收入、发动机尺寸和车辆年度VMT的信息。"></p>
+<p>该表显示，高收入家庭拥有发动机更大的汽车，而且开车平均而言更频繁。这些正相关关系与美国汽车拥有和出行行为的证据一致（Small &amp; Van Dender，2007；Li等，2009，2014）。因为城市地区汽车使用的外部性主要来自拥堵和空气污染，这些外部性与出行距离和汽油使用量直接相关（Parry等，2007）。这意味着，与收入较低的家庭相比，收入较高的家庭可能从汽车使用中产生更大的外部性。福利分析将回到这一点，并为具有不同WTP的不同家庭提供外部性估计。</p>
+<h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><p>本文依靠四个主要数据集以及各种辅助数据进行分析。</p>
+<ol>
+<li>2008年至2012年每个城市按车型（年份-铭牌）划分的月度<strong>汽车销量</strong>。有84,912个观测值（城市-模型-年-月），有1,769种车型。</li>
+<li>销售数据中每个车型的<strong>车辆特征</strong>。这些特征包括价格、燃油经济性（升/100公里）、车辆尺寸、发动机尺寸、车辆类型和车辆细分市场。车辆价格是基于制造商<strong>建议零售价（MSRP）</strong> 和销售税计算得到的。销售税通常定为10%，但在2009年和2010年，发动机排量不超过1.6升的车辆分别降至5%和7.5%。</li>
+<li>各城市按年份划分的收入分布。</li>
+<li>福特汽车公司对新车购买者进行的年度全国代表性家庭调查的汇总信息。我们获得了每个城市每年四个收入群体中新车辆购买者的家庭份额数据。</li>
+</ol>
+<p>注：制造商建议零售价（MSRP）通常在不同地点和车型年内保持不变，由于中国汽车市场很少有制造商或经销商的促销活动，零售价通常与建议零售价相同或非常接近建议零售价。</p>
+<h1 id="策略与结果"><a href="#策略与结果" class="headerlink" title="策略与结果"></a>策略与结果</h1><p><strong>【策略】</strong><br>为了估计汽车拥有量的消费者剩余，本文估计了Berry等（1995）开发的汽车需求的<strong>随机系数离散选择模型（以下简称BLP）</strong>，该模型考虑了消费者偏好异质性和未观察到的产品属性。与Petrin（2002）类似，本文的估计策略采用汇总的市场水平数据和来自家庭调查的信息来形成矩条件。从对新车购买者的家庭调查中获得了不同收入群体中购买者的份额。本文用它们来形成矩条件，它们对于识别消费者偏好异质性至关重要。</p>
+<p>本文的识别策略与文献的一个重要偏离是：不依赖于维持的外生假设，即未观察到的产品属性与观察到的产品属性不相关。利用数据的多市场性质，我们包括车辆模型固定效应来控制未观察到的产品属性。</p>
+<p>此外，<strong>本文明确采用了DID框架中隐含的共同趋势假设，以更好地将政策冲击的影响与未观察到的需求冲击隔离开来</strong>：没有共同趋势假设的模型倾向于将2011年的大幅销售下降归因于巨大的（未观察到的）负面需求冲击。</p>
+<p>我们的市场层面数据包括北京、南京、上海、天津四个城市的数据。南京和天津（<strong>对照组</strong>）分别是上海和北京（<strong>处理组</strong>）旁边的两个大城市。在数据期间，它们没有牌照配额制度，正如我们通过图表和回归显示的那样，<em>在没有政策的情况下，这两个城市的汽车市场表现出与北京和上海相似的趋势</em>。</p>
+<p><strong>【结果】</strong><br>我们的分析得出了几个重要结论：</p>
+<ul>
+<li>首先，北京和上海的两项政策都明显限制了新车销量：北京的抽签制度在2011年和2012年减少了120多万辆新车销量，而上海拍卖会在2008年至2012年期间减少了近200万辆销量。这些下降幅度很大，反映了配额制度的严格性。</li>
+<li>二是不同配置机制的福利后果巨大。虽然北京的抽签系统在降低汽车外部性方面比拍卖系统有30亿元的不小优势，但其因配置不当而产生的配置成本在2012年超过330亿元，这意味着仅2012年北京就有近300亿的福利损失。抽签系统带来的巨大配置成本是由WTP牌照的巨大消费者异质性驱动的。</li>
+<li>第三，如果拍卖，能在2012年为北京市政府带来近200亿收入，这足以覆盖其对当地公交系统的所有补贴。</li>
+<li>第四，基于一系列看似合理的假设，北京的最优配额水平低于2012年使用的配额，进一步降低配额将增加净社会福利。</li>
+</ul>
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>空气污染和交通拥堵可以说是中国城市居民最紧迫的两个问题。为应对这些问题，中国多个主要城市的公交部门正在实施车辆牌照配额制度，以遏制车辆保有量的增长。他们应该如何发放数量有限的车辆牌照？有人可能会说，将资源分配给价值最高者的基于市场的机制将更有效率。然而，<em>如果资源的使用产生了与支付意愿正相关的负外部性，市场化的效率优势机制可能会消失</em>，因为私人收益最高的人使用资源可能会导致较小的社会收益。</p>
+<p>尽管自科斯（1959）以来，已有大量关于资源配置机制的杰出理论文献，但除拍卖文献外，量化资源配置不当及其福利影响的实证研究却寥寥无几。本研究首次对中国城市不同机动车牌照发放机制的福利结果进行了实证分析。</p>
+<p>我们的分析显示，配额制下不同的分配机制导致福利结果的巨大差异。抽签系统在减少汽车外部性方面比拍卖系统有很大优势。尽管如此，这种优势主要是由配置不当带来的显著配置成本决定的。综合考虑配置产生的消费者剩余和配置后的汽车外部性，仅2012年，北京市抽签系统的福利损失估计约300亿元（近50亿美元）。<strong>这突显了在消费者异质性较大的情况下，配置效率的重要性</strong>。这一重大损失尤其令人担忧，因为中央政府已将配额制作为一项打击主要城市地区空气污染的政策，而北京方面往往是制定地方政策的领导者。自2011年以来，另外五个主要城市采用了配额制：两个城市使用抽签，其他城市则采用混合制。虽然选择抽签制度的理由尚未公开，但可以假设，这一决定反映了对平等的担忧。我们发现，在2012年，统一价格拍卖可能会给北京市政府带来近200亿元的收益，可以用来将其对公交系统的补贴翻倍，或者用其他措施解决分配问题。</p>
+<p>中国城市交通部门正在采用的车辆牌照配额制度是一个外生的工具。经济学家长期以来一直在倡导以市场为基础的机制，如庇古政策，以纠正外部性。在现实世界的实施中，拥堵定价方案已在伦敦、新加坡和斯德哥尔摩被采用，并被发现在减少拥堵方面有效（Anas和Lindsey，2011）。燃油税为应对多重汽车外部性提供了次优且管理简单的政策（Parry等，2007）。在本文中，我们重点研究了许可证配额制度框架内两种分配机制的福利后果。<em>在未来，配额制本身与道路定价、汽油税等其他政策选择的比较值得进一步研究。</em></p>
+<p><strong><font size=4><center>## The End ##</center></strong></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="../../../../tags/Paper/" class="print-no-link">#Paper</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Better Lucky Than Rich? Welfare Analysis of Automobile Licence Allocations in Beijing and Shanghai</div>
+      <div>https://zhangwj235.github.io/2025/09/13/Better Lucky Than Rich/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Jack Zhang</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>September 13, 2025</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="../Time%20Series%20Note/" title="时间序列分析自学笔记">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">时间序列分析自学笔记</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="../Is%2060%20the%20New%2050/" title="Is 60 the New 50? Examining Changes in Biological Age Over the Past Two Decades">
+                        <span class="hidden-mobile">Is 60 the New 50? Examining Changes in Biological Age Over the Past Two Decades</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://zhangwj235.github.io" target="_blank" rel="nofollow noopener"><span>Homepage</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/zhangwj235" target="_blank" rel="nofollow noopener"><span>Github</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        Views: 
+        <span id="leancloud-site-pv"></span>
+        
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        Visitors: 
+        <span id="leancloud-site-uv"></span>
+        
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="../../../../js/events.js" ></script>
+<script  src="../../../../js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="../../../../js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="../../../../js/leancloud.js" ></script>
+
+  <script  src="../../../../js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="../../../../js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
