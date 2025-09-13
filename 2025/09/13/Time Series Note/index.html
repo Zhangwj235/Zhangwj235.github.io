@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://zhangwj235.github.io/2025/09/13/Time%20Series%20Note/%E8%BF%B9%E5%9B%BE.png">
 <meta property="og:image" content="https://zhangwj235.github.io/2025/09/13/Time%20Series%20Note/ACF%E5%92%8CPACF%E7%A1%AE%E5%AE%9A%E5%B9%B3%E7%A8%B3%E6%80%A7.png">
 <meta property="article:published_time" content="2025-09-13T09:59:11.385Z">
-<meta property="article:modified_time" content="2025-09-13T16:01:50.800Z">
+<meta property="article:modified_time" content="2025-09-13T16:31:18.503Z">
 <meta property="article:author" content="Jack Zhang">
 <meta property="article:tag" content="Notes">
 <meta name="twitter:card" content="summary_large_image">
@@ -353,26 +353,32 @@ class="math inline">\(E_{y_{t+2}}=a_0+a_1E_{y_{t+1}}=a_0+a_1(a_0+a_1y_t)=a_0+a_1
 </ul>
 <h3 id="112-典型的时间序列问题">1.1.2 典型的时间序列问题</h3>
 <ul>
-<li><p><strong>【单方程模型】随机游走假设</strong>： -
-<strong>模型</strong>：<span class="math inline">\(y_{t+1} = y_t +
+<li><p><strong>【单方程模型】随机游走假设</strong>：</p>
+<ul>
+<li><strong>模型</strong>：<span class="math inline">\(y_{t+1} = y_t +
 \varepsilon_{t+1}\)</span>，即 <span class="math inline">\(\Delta
-y_{t+1} = \varepsilon_{t+1}\)</span>。 -
-<strong>检验</strong>：对更一般的方程 <span class="math inline">\(\Delta
-y_{t+1} = a_0 + a_1 y_t + \varepsilon_{t+1}\)</span>，需验证 <span
-class="math inline">\(a_0 = a_1 = 0\)</span>。 - 第 2 章到第 4
-章将再次讨论如何恰当地估计单方程模型。</p></li>
-<li><p><strong>【诱导方程和结构方程】</strong> -
-<strong>结构方程</strong>（structural
-equation）的内生因变量依赖于另一个内生变量（自变量）的当期实现值。 -
-<strong>诱导方程</strong>（reduced-form
+y_{t+1} = \varepsilon_{t+1}\)</span>。</li>
+<li><strong>检验</strong>：对更一般的方程 <span
+class="math inline">\(\Delta y_{t+1} = a_0 + a_1 y_t +
+\varepsilon_{t+1}\)</span>，需验证 <span class="math inline">\(a_0 = a_1
+= 0\)</span>。</li>
+<li>第 2 章到第 4 章将再次讨论如何恰当地估计单方程模型。</li>
+</ul></li>
+<li><p><strong>【诱导方程和结构方程】</strong></p>
+<ul>
+<li><strong>结构方程</strong>（structural
+equation）的内生因变量依赖于另一个内生变量（自变量）的当期实现值。</li>
+<li><strong>诱导方程</strong>（reduced-form
 equation，我们也常说是简约式，例如计量中的 IV
 估计）则是将内生变量表示成该变量 <strong>滞后值</strong>、其他内生变量的
 <strong>滞后值</strong>、<strong>外生变量</strong> 的当期和过去值以及
-<strong>扰动项</strong> 的函数。 -
-我们可以简单的用“是否自变量纯粹为滞后变量”来判别。</p>
+<strong>扰动项</strong> 的函数。</li>
+<li>我们可以简单的用“是否自变量纯粹为滞后变量”来判别。</li>
+</ul></li>
+</ul>
 <blockquote>
 <p>[!Example]</p>
-<p>【例】 <span class="math display">\[
+<p>【例】 <span class="math display">\[  
 \begin{cases}
 y_t = c_t + i_t \\
 c_t = \alpha y_{t-1} + \varepsilon_{ct} \quad 0 &lt; \alpha &lt; 1 \\
@@ -381,9 +387,10 @@ i_t = \beta (c_t - c_{t-1}) + \varepsilon_{it} \quad \beta &gt; 0
 \]</span></p>
 <p>消费函数中的当期消费仅仅依赖于滞后收入 <span
 class="math inline">\(y_{t-1}\)</span> 和扰动项 <span
-class="math inline">\(\varepsilon\)</span>，它已经表示成了诱导方程。</p>
-<p>而投资函数还不是诱导方程，因为当期投资还依赖于当期消费。那么，它的投资函数的诱导方程是什么？
-<span class="math display">\[
+class="math inline">\(\varepsilon\)</span>
+，它已经表示成了诱导方程。</p>
+<p>而投资函数还不是诱导方程，因为当期投资还依赖于当期消费。那么，它的投资函数的诱导方程是什么？</p>
+<p><span class="math display">\[
 \begin{align}
 i_t &amp;= \beta (c_t - c_{t-1}) + \varepsilon_{it} \notag \\
 &amp;= \beta (\alpha y_{t-1} + \varepsilon_{ct} - c_{t-1}) +
@@ -391,35 +398,40 @@ i_t &amp;= \beta (c_t - c_{t-1}) + \varepsilon_{it} \notag \\
 &amp;= \alpha \beta y_{t-1} - \beta c_{t-1} + \beta \varepsilon_t +
 \varepsilon_{it} \notag
 \end{align} \notag
-\]</span> <strong>【练习】：请推导 <span
-class="math inline">\(y_t\)</span> 的诱导方程。如果消去所有 <span
-class="math inline">\(c\)</span> 呢？</strong></p>
-<p>我们可以进一步简化得到下面的形式： <span class="math display">\[
+\]</span></p>
+<p><strong>【练习】：请推导 <span class="math inline">\(y_t\)</span>
+的诱导方程。如果消去所有 <span class="math inline">\(c\)</span>
+呢？</strong></p>
+<p>我们可以进一步简化得到下面的形式：</p>
+<p><span class="math display">\[
 y_t = ay_{t-1} + by_{t-2} + x_t \notag
-\]</span> 这是一个单变量诱导方程，<span
-class="math inline">\(y_t\)</span>
+\]</span></p>
+<p>这是一个单变量诱导方程，<span class="math inline">\(y_t\)</span>
 完全被表示为其滞后值和干扰项的函数。单变量模型用于预测特别有效，我们只需根据它当期和过去的实现值，就可对序列进行预测。</p>
-</blockquote></li>
-</ul>
+</blockquote>
 <p>在学完第 2 章到第 4 章阐述的单变量时间序列分析方法后，第 5
 章讨论当所有变量都被当作联合内生变量时的多变量模型估计。该章也讨论从已估诱导模型还原到结构模型所需的约束条件。</p>
 <ul>
-<li><strong>【误差纠正】无偏远期汇率（UFR）假设</strong>： -
-<strong>模型</strong>：<span class="math inline">\(s_{t+1} = f_t +
+<li><strong>【误差纠正】无偏远期汇率（UFR）假设</strong>：
+<ul>
+<li><strong>模型</strong>：<span class="math inline">\(s_{t+1} = f_t +
 \varepsilon_{t+1}\)</span>，其中 <span
 class="math inline">\(s_{t+1}\)</span> 为未来即期汇率，<span
-class="math inline">\(f_t\)</span> 为当前远期汇率。 -
-<strong>回归检验</strong>：<span class="math inline">\(s_{t+1} = a_0 +
-a_1 f_t + \varepsilon_{t+1}\)</span>，要求 <span
+class="math inline">\(f_t\)</span> 为当前远期汇率。</li>
+<li><strong>回归检验</strong>：<span class="math inline">\(s_{t+1} = a_0
++ a_1 f_t + \varepsilon_{t+1}\)</span>，要求 <span
 class="math inline">\(a_0 = 0\)</span>、<span class="math inline">\(a_1
 = 1\)</span>，且残差 <span
-class="math inline">\(\varepsilon_{t+1}\)</span> 均值为零。 -
-<strong>调整机制</strong>：若 <span class="math inline">\(s_{t+1} \neq
-f_t\)</span>，后续汇率和远期利率会通过下面的误差纠正模型联立调整： -
-如果即期汇率与远期汇率相等（<span class="math inline">\(s_{t+1} =
-f_t\)</span>），则即期和远期汇率倾向于保持不变。 -
-如果即期与远期汇率之差为正，即 <span class="math inline">\(s_{t+1} -
+class="math inline">\(\varepsilon_{t+1}\)</span> 均值为零。</li>
+<li><strong>调整机制</strong>：若 <span class="math inline">\(s_{t+1}
+\neq f_t\)</span>，后续汇率和远期利率会通过下面的误差纠正模型联立调整：
+<ul>
+<li>如果即期汇率与远期汇率相等（<span class="math inline">\(s_{t+1} =
+f_t\)</span>），则即期和远期汇率倾向于保持不变。</li>
+<li>如果即期与远期汇率之差为正，即 <span class="math inline">\(s_{t+1} -
 f_t&gt;0\)</span>，则预期：即期汇率会趋于下降，远期汇率会趋于上升。</li>
+</ul></li>
+</ul></li>
 </ul>
 <p><span class="math display">\[
 \begin{cases}
@@ -428,13 +440,16 @@ f_{t+1} = f_t + b(s_{t+1} - f_t) + \varepsilon_{f, t+1} \notag
 \end{cases}
 \]</span></p>
 <ul>
-<li><strong>【非线性动态模型】趋势-周期关系</strong>： -
-<strong>分解公式</strong>：<span class="math inline">\(y_t = Trend +
-Cycle + Noise\)</span>。 - <strong>趋势</strong>：长期稳定增长或下降（如
-GDP 的长期趋势）。 -
-<strong>周期</strong>：围绕趋势的短期波动（如商业周期）。 -
-<strong>噪声</strong>：随机不可预测部分（如突发政策冲击）。 -
-<strong>应用</strong>：摩擦性失业（Noise）、结构性失业（Trend，如房地产业）、周期性失业（Cycle，如经济危机）</li>
+<li><strong>【非线性动态模型】趋势-周期关系</strong>：
+<ul>
+<li><strong>分解公式</strong>：<span class="math inline">\(y_t = Trend +
+Cycle + Noise\)</span>。</li>
+<li><strong>趋势</strong>：长期稳定增长或下降（如 GDP
+的长期趋势）。</li>
+<li><strong>周期</strong>：围绕趋势的短期波动（如商业周期）。</li>
+<li><strong>噪声</strong>：随机不可预测部分（如突发政策冲击）。</li>
+<li><strong>应用</strong>：摩擦性失业（Noise）、结构性失业（Trend，如房地产业）、周期性失业（Cycle，如经济危机）</li>
+</ul></li>
 </ul>
 <p>第 7 章将专门讨论一些具有更为复杂的 <strong>动态结构模型</strong>
 的估计。</p>
