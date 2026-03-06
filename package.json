@@ -35,6 +35,6 @@
     "save": "^2.9.0"
   },
   "devDependencies": {
-    "@mdit/plugin-alert": "^0.22.2"
+    "@mdit/plugin-alert": "^0.23.1"
   }
 }
